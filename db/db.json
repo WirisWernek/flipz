@@ -1,0 +1,60 @@
+{
+	"colecoes":[
+		{
+			"id": 1,
+			"nome": "Coleção 1",
+			"descricao": "Descrição da Coleção 1",
+			"data_criacao": "2023-10-01",
+			"usuarioId": 1
+		},
+		{
+			"id": 2,
+			"nome": "Coleção 2",
+			"descricao": "Descrição da Coleção 2",
+			"data_criacao": "2023-10-02",
+			"usuarioId": 1
+		}
+	],
+	"grupos":[
+		{
+			"id": 1,
+			"nome": "Grupo 1",
+			"descricao": "Descrição do Grupo 1",
+			"colecaoId": 1
+		},
+		{
+			"id": 2,
+			"nome": "Grupo 2",
+			"descricao": "Descrição do Grupo 2",
+			"colecaoId": 2
+		}
+	],
+	"decks":[
+		{
+			"id": 1,
+			"nome": "Deck 1",
+			"descricao": "Descrição do Deck 1",
+			"grupoId": 1
+		},
+		{
+			"id": 2,
+			"nome": "Deck 2",
+			"descricao": "Descrição do Deck 2",
+			"grupoId": 2
+		}
+	],
+	"flash-cards":[
+		{
+			"id": 1,
+			"pergunta": "Pergunta 1",
+			"resposta": "Resposta 1",
+			"deckId": 1
+		},
+		{
+			"id": 2,
+			"pergunta": "Pergunta 2",
+			"resposta": "Resposta 2",
+			"deckId": 2
+		}
+	]
+}
