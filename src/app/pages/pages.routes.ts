@@ -17,6 +17,11 @@ export const PAGES_ROUTES: Routes = [
 		loadChildren: () => import('./views/grupo/grupo.routes').then(r => r.GRUPO_ROUTES)
 	},
 	{
+		path: 'deck',
+		loadComponent: () => import('./layouts/default/default.component').then(c => c.DefaultComponent),
+		loadChildren: () => import('./views/deck/deck.routes').then(r => r.DECK_ROUTES)
+	},
+	{
 		path: 'flash-card',
 		loadComponent: () => import('./layouts/default/default.component').then(c => c.DefaultComponent),
 		loadChildren: () => import('./views/flash-card/flash-card.routes').then(r => r.FLASH_CARD_ROUTES)
