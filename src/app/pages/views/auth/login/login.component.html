@@ -1,1 +1,18 @@
-<p>login works!</p>
+<form [formGroup]="form" class="w-full">	
+	@if (senha) {
+		<mat-form-field appearance="outline" class="w-full">
+			<mat-label>Email</mat-label>
+			<input matInput placeholder="Ex: silva@gmail.com" formControlName="email" />
+		</mat-form-field>
+	
+		<button mat-flat-button color="primary" class="w-full" (click)="avancar()">Avançar</button>
+	} @else {
+		<mat-form-field appearance="outline" class="w-full">
+			<mat-label>Password</mat-label>
+			<input matInput placeholder="Ex: 123456" formControlName="password" />
+		</mat-form-field>
+	
+		<button mat-flat-button color="primary" class="w-full">Login</button>
+	}
+
+</form>
