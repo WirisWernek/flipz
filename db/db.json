@@ -4,15 +4,64 @@
 			"id": 1,
 			"nome": "Coleção 1",
 			"descricao": "Descrição da Coleção 1",
-			"data_criacao": "2023-10-01",
-			"usuarioId": 1
+			"dataCriacao": "2023-10-01",
+			"usuarioId": 1,
+			"grupos":[
+				{
+					"id": 1,
+					"nome": "Deck 1",
+					"descricao": "Descrição do Deck 1",
+					"grupoId": 1
+				},
+				{
+					"id": 2,
+					"nome": "Deck 2",
+					"descricao": "Descrição do Deck 2",
+					"grupoId": 2
+				}
+			]
 		},
 		{
 			"id": 2,
 			"nome": "Coleção 2",
 			"descricao": "Descrição da Coleção 2",
-			"data_criacao": "2023-10-02",
+			"dataCriacao": "2023-10-02",
 			"usuarioId": 1
+		},
+		{
+			"id": 3,
+			"nome": "Coleção 3",
+			"descricao": "Descrição da Coleção 3",
+			"dataCriacao": "2023-10-03",
+			"usuarioId": 2
+		},
+		{
+			"id": 4,
+			"nome": "Coleção 4",
+			"descricao": "Descrição da Coleção 4",
+			"dataCriacao": "2023-10-04",
+			"usuarioId": 2
+		},
+		{
+			"id": 5,
+			"nome": "Coleção 5",
+			"descricao": "Descrição da Coleção 5",
+			"dataCriacao": "2023-10-05",
+			"usuarioId": 3
+		},
+		{
+			"id": 6,
+			"nome": "Coleção 6",
+			"descricao": "Descrição da Coleção 6",
+			"dataCriacao": "2023-10-06",
+			"usuarioId": 3
+		},
+		{
+			"id": 7,
+			"nome": "Coleção 7",
+			"descricao": "Descrição da Coleção 7",
+			"dataCriacao": "2023-10-07",
+			"usuarioId": 4
 		}
 	],
 	"grupos":[
