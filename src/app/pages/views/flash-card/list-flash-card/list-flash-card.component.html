@@ -1,1 +1,10 @@
-<p>list-flash-card works!</p>
+<main>
+	@for (item of flashCards$ | async; track $index) {
+		<mat-card appearance="outlined">
+			<mat-card-content>
+				<img src="icons/report-card.svg" alt="" class="" srcset="">	
+				<p>{{item.pergunta}}</p>
+			</mat-card-content>
+		</mat-card>
+	}
+</main>

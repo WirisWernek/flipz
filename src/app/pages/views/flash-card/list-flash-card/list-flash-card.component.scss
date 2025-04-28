@@ -1,0 +1,30 @@
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+}
+
+mat-card {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    mat-card-content {
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    img {
+        width: 20%;
+        object-fit: cover;
+    }
+
+    p {
+    }
+}
