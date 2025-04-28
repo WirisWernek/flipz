@@ -1,1 +1,14 @@
-<p>list-grupo works!</p>
+<main>
+	@for (item of grupos$ | async; track $index) {
+		<mat-card appearance="outlined">
+			<mat-card-content>
+				<div>
+					@for (item of [1,2,3,4]; track $index) {
+						<img src="icons/copybook.svg" width="60" alt="" class="" srcset="">
+					}	
+				</div>
+				<p>{{item.nome}}</p>
+			</mat-card-content>
+		</mat-card>
+	}
+</main>

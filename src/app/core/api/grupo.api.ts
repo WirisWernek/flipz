@@ -12,7 +12,7 @@ export class GrupoApi {
     private client = inject(HttpClient)
 
     get() {
-        return this.client.get<GrupoModel>(this.url)
+        return this.client.get<GrupoModel[]>(this.url)
     }
 
     getById(id: number) {
