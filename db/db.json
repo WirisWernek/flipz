@@ -18,6 +18,12 @@
 					"nome": "Deck 2",
 					"descricao": "Descrição do Deck 2",
 					"grupoId": 2
+				},
+				{
+					"id": 3,
+					"nome": "Deck 3",
+					"descricao": "Descrição do Deck 3",
+					"grupoId": 3
 				}
 			]
 		},
@@ -92,7 +98,7 @@
 			"grupoId": 2
 		}
 	],
-	"flash-cards":[
+	"flashcards":[
 		{
 			"id": 1,
 			"pergunta": "Pergunta 1",
