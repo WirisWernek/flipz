@@ -21,21 +21,12 @@ mat-card {
 		justify-content: center;
 	}
 
-    div {
-		width: 90%;
-		display: flex;
-		align-items: center;
-		gap: 1rem;
-		justify-content: center;
-		flex-wrap: wrap;
-    }
-
 	img{
-		width: 70%;
+		width: 60%;
 		object-fit: cover;
 	}
 
 	p{
-		margin-top: 2rem;
+		
 	}
 }
