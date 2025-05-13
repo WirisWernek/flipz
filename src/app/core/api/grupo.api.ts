@@ -1,8 +1,8 @@
-import { HttpClient } from '@angular/common/http'
-import { inject, Injectable } from '@angular/core'
-import { environment } from '../../../environments/environment.development'
-import { GrupoModel } from '../models/grupo.model'
-
+import { HttpClient } from '@angular/common/http';
+import { inject, Injectable } from '@angular/core';
+import { environment } from '@environments/environment.development';
+import { DeckModel } from '@models/deck.model';
+import { GrupoModel } from '@models/grupo.model';
 
 @Injectable({
     providedIn: 'root',
@@ -29,5 +29,9 @@ export class GrupoApi {
 
     delete(id: number) {
         return this.client.delete(`${this.url}/${id}`)
+    }
+
+    getDecksByGrupo(id: number) {
+        return this.client.get<DeckModel[]>(`${this.url}/${id}/decks`)
     }
 }

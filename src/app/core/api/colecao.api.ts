@@ -1,34 +1,37 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { environment } from '../../../environments/environment';
-import { ColecaoModel } from '../models/colecao.model';
-
+import { environment } from '@environments/environment.development';
+import { ColecaoModel } from '@models/colecao.model';
+import { GrupoModel } from '@models/grupo.model';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root',
 })
 export class ColecaoApi {
-	private readonly url = environment.API_URL + '/colecoes';
-	private client = inject(HttpClient);
+    private readonly url = environment.API_URL + '/colecoes'
+    private client = inject(HttpClient)
 
-	get() { 
-		return this.client.get<ColecaoModel[]>(this.url);
-	}
+    get() {
+        return this.client.get<ColecaoModel[]>(this.url)
+    }
 
-	getById(id: number) {
-		return this.client.get<ColecaoModel>(`${this.url}/${id}`);
-	}
+    getById(id: number) {
+        return this.client.get<ColecaoModel>(`${this.url}/${id}`)
+    }
 
-	post(colecao: ColecaoModel) {
-		return this.client.post(this.url, colecao);
-	}
+    post(colecao: ColecaoModel) {
+        return this.client.post(this.url, colecao)
+    }
 
-	put(id: number, colecao: ColecaoModel) {
-		return this.client.put(`${this.url}/${id}`, colecao);
-	}
+    put(id: number, colecao: ColecaoModel) {
+        return this.client.put(`${this.url}/${id}`, colecao)
+    }
 
-	delete(id: number) {
-		return this.client.delete(`${this.url}/${id}`);
+    delete(id: number) {
+        return this.client.delete(`${this.url}/${id}`)
 	}
-  
+	
+	getGruposByColecao(id: number) {
+		return this.client.get<GrupoModel[]>(`${this.url}/${id}/grupos`)
+	}
 }

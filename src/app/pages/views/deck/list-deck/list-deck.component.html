@@ -1,6 +1,6 @@
 <main>
 	@for (item of decks$ | async; track $index) {
-		<mat-card appearance="outlined">
+		<mat-card appearance="outlined" (click)="goToFlashCardsByDeck(item.id)">
 			<mat-card-content>
 				<img src="icons/stack-of-paper.svg" alt="" class="" srcset="">	
 				<p>{{item.nome}}</p>

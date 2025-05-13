@@ -1,6 +1,6 @@
 <main>
 	@for (item of colecoes$ | async; track $index) {
-		<mat-card appearance="outlined">
+		<mat-card appearance="outlined" (click)="goToGruposByColecao(item.id)">
 			<mat-card-content>
 				<img src="icons/course-assign.svg" alt="" class="" srcset="">
 				<p>{{item.nome}}</p>

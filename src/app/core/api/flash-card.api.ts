@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http'
 import { inject, Injectable } from '@angular/core'
-import { environment } from '../../../environments/environment.development'
-import { FlashCardModel } from '../models/flash-card.model'
+import { environment } from '@environments/environment.development'
+import { FlashCardModel } from '@models/flash-card.model'
 
 @Injectable({
     providedIn: 'root',

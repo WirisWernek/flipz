@@ -1,6 +1,6 @@
 <main>
 	@for (item of grupos$ | async; track $index) {
-		<mat-card appearance="outlined">
+		<mat-card appearance="outlined" (click)="goToDecksByGrupo(item.id)">
 			<mat-card-content>
 				<img src="icons/copybook.svg" alt="" class="" srcset="">	
 				<p>{{item.nome}}</p>

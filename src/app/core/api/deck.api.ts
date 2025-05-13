@@ -1,7 +1,8 @@
-import { HttpClient } from '@angular/common/http'
-import { inject, Injectable } from '@angular/core'
-import { environment } from '../../../environments/environment.development'
-import { DeckModel } from '../models/deck.model'
+import { HttpClient } from '@angular/common/http';
+import { inject, Injectable } from '@angular/core';
+import { environment } from '@environments/environment.development';
+import { DeckModel } from '@models/deck.model';
+import { FlashCardModel } from '@models/flash-card.model';
 
 @Injectable({
     providedIn: 'root',
@@ -28,5 +29,9 @@ export class DeckApi {
 
     delete(id: number) {
         return this.client.delete(`${this.url}/${id}`)
+    }
+
+    getFlashCardsByDeck(id: number) {
+        return this.client.get<FlashCardModel[]>(`${this.url}/${id}/flashcards`)
     }
 }
